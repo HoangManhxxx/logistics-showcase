@@ -30,8 +30,8 @@ const news = [
   },
   {
     id: 3,
-    title: "Vận Tải Việt Nam khai trương kho bãi mới tại Long An",
-    excerpt: "Chúng tôi vui mừng thông báo khai trương kho logistics 10.000m² tại KCN Long Hậu, Long An.",
+    title: "Vận Tải Hoàng Phong mở rộng dịch vụ tại miền Trung",
+    excerpt: "Chúng tôi vui mừng thông báo mở rộng mạng lưới dịch vụ vận chuyển tại khu vực miền Trung.",
     image: warehouse,
     date: "05/11/2024",
     author: "Admin",
@@ -57,7 +57,7 @@ const news = [
   },
   {
     id: 6,
-    title: "Vận Tải Việt Nam đạt chứng nhận ISO 9001:2015",
+    title: "Vận Tải Hoàng Phong đạt chứng nhận ISO 9001:2015",
     excerpt: "Chúng tôi tự hào được cấp chứng nhận hệ thống quản lý chất lượng ISO 9001:2015.",
     image: warehouse,
     date: "20/10/2024",

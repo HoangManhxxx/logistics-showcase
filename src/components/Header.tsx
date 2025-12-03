@@ -48,10 +48,10 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3">
             <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-heading font-bold text-xl">VT</span>
+              <span className="text-primary-foreground font-heading font-bold text-xl">HP</span>
             </div>
             <div className="hidden sm:block">
-              <h1 className="font-heading font-bold text-lg text-primary leading-tight">VẬN TẢI VIỆT NAM</h1>
+              <h1 className="font-heading font-bold text-lg text-primary leading-tight">VẬN TẢI HOÀNG PHONG</h1>
               <p className="text-xs text-muted-foreground">Uy tín - Chất lượng - Hiệu quả</p>
             </div>
           </Link>

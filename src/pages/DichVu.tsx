@@ -8,9 +8,7 @@ import { ArrowRight, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import containerYard from "@/assets/container-yard.jpg";
 import heavyTransport from "@/assets/heavy-transport.jpg";
-import warehouse from "@/assets/warehouse.jpg";
 import flatbedTruck from "@/assets/flatbed-truck.jpg";
-import craneService from "@/assets/crane-service.jpg";
 import heroTruck from "@/assets/hero-truck.jpg";
 
 const services = [
@@ -42,19 +40,6 @@ const services = [
   },
   {
     id: 3,
-    title: "Cho thuê kho bãi",
-    description: "Hệ thống kho bãi hiện đại, rộng rãi tại các KCN lớn, đáp ứng nhu cầu lưu trữ ngắn hạn và dài hạn.",
-    image: warehouse,
-    features: [
-      "Diện tích kho từ 500m² - 10.000m²",
-      "Kho thông thường và kho lạnh",
-      "Hệ thống PCCC đạt chuẩn",
-      "Bảo vệ 24/7",
-      "Dịch vụ bốc xếp, đóng gói",
-    ],
-  },
-  {
-    id: 4,
     title: "Vận chuyển hàng công trình",
     description: "Vận chuyển vật liệu xây dựng, thiết bị máy móc phục vụ các công trình xây dựng trên toàn quốc.",
     image: flatbedTruck,
@@ -64,19 +49,6 @@ const services = [
       "Xe chuyên dụng chở kết cấu thép",
       "Đúng tiến độ thi công",
       "Báo giá theo chuyến hoặc theo khối lượng",
-    ],
-  },
-  {
-    id: 5,
-    title: "Dịch vụ cẩu nâng hạ",
-    description: "Dịch vụ cẩu hàng, nâng hạ thiết bị, lắp đặt máy móc với đội ngũ kỹ thuật viên giàu kinh nghiệm.",
-    image: craneService,
-    features: [
-      "Cẩu 25T - 500T",
-      "Cẩu bánh lốp, cẩu bánh xích",
-      "Lắp đặt thiết bị, máy móc",
-      "Nâng hạ container, kết cấu thép",
-      "Cho thuê cẩu theo giờ/ngày",
     ],
   },
 ];

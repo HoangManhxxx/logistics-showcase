@@ -13,9 +13,9 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Vận Tải Việt Nam | Dịch vụ vận chuyển container, hàng siêu trường siêu trọng</title>
-        <meta name="description" content="Công ty vận tải hàng đầu Việt Nam chuyên vận chuyển container nội địa, hàng siêu trường siêu trọng, cho thuê kho bãi. Hotline: 090 123 45 67" />
-        <meta name="keywords" content="vận tải, vận chuyển container, hàng siêu trường siêu trọng, kho bãi, cẩu nâng hạ" />
+        <title>Vận Tải Hoàng Phong | Dịch vụ vận chuyển container, hàng siêu trường siêu trọng</title>
+        <meta name="description" content="Công ty Vận Tải Hoàng Phong chuyên vận chuyển container nội địa, hàng siêu trường siêu trọng, hàng công trình. Hotline: 090 123 45 67" />
+        <meta name="keywords" content="vận tải, vận chuyển container, hàng siêu trường siêu trọng, hàng công trình" />
         <link rel="canonical" href="https://vantaivietnam.vn" />
       </Helmet>
 
