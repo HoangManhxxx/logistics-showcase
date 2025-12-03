@@ -3,9 +3,7 @@ import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import containerYard from "@/assets/container-yard.jpg";
 import heavyTransport from "@/assets/heavy-transport.jpg";
-import warehouse from "@/assets/warehouse.jpg";
 import flatbedTruck from "@/assets/flatbed-truck.jpg";
-import craneService from "@/assets/crane-service.jpg";
 
 const services = [
   {
@@ -24,24 +22,10 @@ const services = [
   },
   {
     id: 3,
-    title: "Cho thuê kho bãi",
-    description: "Hệ thống kho bãi hiện đại, đáp ứng nhu cầu lưu trữ hàng hóa dài hạn và ngắn hạn.",
-    image: warehouse,
-    link: "/dich-vu/kho-bai",
-  },
-  {
-    id: 4,
     title: "Vận chuyển hàng công trình",
     description: "Chuyên vận chuyển vật liệu xây dựng, thiết bị máy móc công trình.",
     image: flatbedTruck,
     link: "/dich-vu/hang-cong-trinh",
-  },
-  {
-    id: 5,
-    title: "Dịch vụ cẩu nâng hạ",
-    description: "Dịch vụ cẩu hàng, nâng hạ thiết bị với đội ngũ kỹ thuật chuyên nghiệp.",
-    image: craneService,
-    link: "/dich-vu/cau-nang-ha",
   },
 ];
 

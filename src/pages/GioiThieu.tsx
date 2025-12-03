@@ -36,7 +36,6 @@ const milestones = [
   { year: "2008", event: "Thành lập công ty với 10 xe đầu kéo" },
   { year: "2012", event: "Mở rộng dịch vụ vận chuyển siêu trường siêu trọng" },
   { year: "2016", event: "Đạt 200 phương tiện, mở văn phòng tại Hà Nội" },
-  { year: "2020", event: "Đầu tư hệ thống kho bãi hiện đại 10.000m²" },
   { year: "2024", event: "500+ phương tiện, 1000+ khách hàng toàn quốc" },
 ];
 
@@ -44,8 +43,8 @@ const GioiThieu = () => {
   return (
     <>
       <Helmet>
-        <title>Giới thiệu | Vận Tải Việt Nam - 15 năm kinh nghiệm vận tải</title>
-        <meta name="description" content="Giới thiệu về công ty Vận Tải Việt Nam - Đơn vị vận tải uy tín với 15+ năm kinh nghiệm, 500+ phương tiện, phục vụ 1000+ khách hàng toàn quốc." />
+        <title>Giới thiệu | Vận Tải Hoàng Phong - 15 năm kinh nghiệm vận tải</title>
+        <meta name="description" content="Giới thiệu về công ty Vận Tải Hoàng Phong - Đơn vị vận tải uy tín với 15+ năm kinh nghiệm, 500+ phương tiện, phục vụ 1000+ khách hàng toàn quốc." />
       </Helmet>
 
       <div className="min-h-screen">
@@ -77,7 +76,7 @@ const GioiThieu = () => {
                   <h2 className="section-title mt-2">Đối Tác Vận Tải Tin Cậy</h2>
                   <div className="space-y-4 text-muted-foreground">
                     <p>
-                      Công ty TNHH Vận Tải Việt Nam được thành lập từ năm 2008, xuất phát từ niềm đam mê 
+                      Công ty TNHH Vận Tải Hoàng Phong được thành lập từ năm 2008, xuất phát từ niềm đam mê 
                       và khát vọng xây dựng một đơn vị vận tải chuyên nghiệp, hiện đại tại Việt Nam.
                     </p>
                     <p>

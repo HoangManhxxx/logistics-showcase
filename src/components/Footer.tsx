@@ -11,10 +11,10 @@ const Footer = () => {
           <div>
             <div className="flex items-center gap-3 mb-4">
               <div className="w-12 h-12 bg-primary-foreground rounded-lg flex items-center justify-center">
-                <span className="text-primary font-heading font-bold text-xl">VT</span>
+                <span className="text-primary font-heading font-bold text-xl">HP</span>
               </div>
               <div>
-                <h3 className="font-heading font-bold text-lg">VẬN TẢI VIỆT NAM</h3>
+                <h3 className="font-heading font-bold text-lg">VẬN TẢI HOÀNG PHONG</h3>
               </div>
             </div>
             <p className="text-primary-foreground/80 mb-4 text-sm leading-relaxed">
@@ -63,8 +63,6 @@ const Footer = () => {
             <ul className="space-y-3 text-primary-foreground/80">
               <li>Vận chuyển Container nội địa</li>
               <li>Hàng siêu trường siêu trọng</li>
-              <li>Cho thuê kho bãi</li>
-              <li>Dịch vụ cẩu nâng hạ</li>
               <li>Vận chuyển hàng công trình</li>
             </ul>
           </div>
@@ -119,7 +117,7 @@ const Footer = () => {
       {/* Bottom Bar */}
       <div className="border-t border-primary-foreground/10 py-4">
         <div className="container mx-auto text-center text-sm text-primary-foreground/70">
-          <p>© 2024 Vận Tải Việt Nam. Tất cả quyền được bảo lưu.</p>
+          <p>© 2024 Vận Tải Hoàng Phong. Tất cả quyền được bảo lưu.</p>
         </div>
       </div>
     </footer>
