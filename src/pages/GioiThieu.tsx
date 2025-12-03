@@ -85,14 +85,9 @@ const GioiThieu = () => {
                   <h2 className="section-title mt-2">Đối Tác Vận Tải Tin Cậy</h2>
                   <div className="space-y-4 text-muted-foreground">
                     <p>
-                      Công ty TNHH Vận Tải Hoàng Phong được thành lập từ năm 2008, xuất phát từ niềm đam mê 
-                      và khát vọng xây dựng một đơn vị vận tải chuyên nghiệp, hiện đại tại Việt Nam.
+                      Công ty TNHH DỊch vụ và Vận Tải Hoàng Phong được thành lập từ năm 2014, xuất phát từ niềm đam mê và khát vọng xây dựng một đơn vị vận tải chuyên nghiệp, hiện đại tại Việt Nam.
                     </p>
-                    <p>
-                      Với đội ngũ hơn 500 nhân viên giàu kinh nghiệm cùng hệ thống xe đa dạng từ 5 tấn 
-                      đến xe siêu trường siêu trọng, chúng tôi cam kết đáp ứng mọi nhu cầu vận chuyển 
-                      của khách hàng.
-                    </p>
+                    <p>Với đội ngũ hơn 100 nhân viên giàu kinh nghiệm cùng hệ thống xe đa dạng từ 5 tấn đến xe siêu trường siêu trọng, chúng tôi cam kết đáp ứng mọi nhu cầu vận chuyển của khách hàng.</p>
                     <p>
                       Chúng tôi luôn đặt sự hài lòng của khách hàng lên hàng đầu, với phương châm 
                       "Uy tín - Chất lượng - Hiệu quả" trong mọi hoạt động.
