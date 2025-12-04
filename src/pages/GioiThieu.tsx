@@ -8,7 +8,7 @@ import warehouseImage from "@/assets/warehouse.jpg";
 import heroTruck from "@/assets/hero-truck.jpg";
 const stats = [{
   icon: Truck,
-  value: "500+",
+  value: "100+",
   label: "Phương tiện vận tải"
 }, {
   icon: Users,
@@ -16,7 +16,7 @@ const stats = [{
   label: "Khách hàng tin tưởng"
 }, {
   icon: Award,
-  value: "15+",
+  value: "10+",
   label: "Năm kinh nghiệm"
 }, {
   icon: Shield,
@@ -37,23 +37,23 @@ const values = [{
   description: "Uy tín - Chất lượng - Hiệu quả - Đồng hành cùng khách hàng."
 }];
 const milestones = [{
-  year: "2008",
+  year: "2014",
   event: "Thành lập công ty với 10 xe đầu kéo"
 }, {
-  year: "2012",
+  year: "2017",
   event: "Mở rộng dịch vụ vận chuyển siêu trường siêu trọng"
 }, {
-  year: "2016",
-  event: "Đạt 200 phương tiện, mở văn phòng tại Hà Nội"
+  year: "2020",
+  event: "Đạt 50 phương tiện, mở văn phòng tại Hà Nội"
 }, {
   year: "2024",
-  event: "500+ phương tiện, 1000+ khách hàng toàn quốc"
+  event: "100+ phương tiện, 1000+ khách hàng toàn quốc"
 }];
 const GioiThieu = () => {
   return <>
       <Helmet>
-        <title>Giới thiệu | Vận Tải Hoàng Phong - 15 năm kinh nghiệm vận tải</title>
-        <meta name="description" content="Giới thiệu về công ty Vận Tải Hoàng Phong - Đơn vị vận tải uy tín với 15+ năm kinh nghiệm, 500+ phương tiện, phục vụ 1000+ khách hàng toàn quốc." />
+        <title>Giới thiệu | Vận Tải Hoàng Phong - 10 năm kinh nghiệm vận tải</title>
+        <meta name="description" content="Giới thiệu về công ty Vận Tải Hoàng Phong - Đơn vị vận tải uy tín với 10+ năm kinh nghiệm, 100+ phương tiện, phục vụ 1000+ khách hàng toàn quốc." />
       </Helmet>
 
       <div className="min-h-screen">

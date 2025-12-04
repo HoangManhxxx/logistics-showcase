@@ -6,7 +6,7 @@ import heroImage from "@/assets/hero-truck.jpg";
 const HeroSection = () => {
   const features = [
     "Vận chuyển toàn quốc 24/7",
-    "Đội xe hiện đại 500+ phương tiện",
+    "Đội xe hiện đại 100+ phương tiện",
     "Bảo hiểm hàng hóa 100%",
   ];
 

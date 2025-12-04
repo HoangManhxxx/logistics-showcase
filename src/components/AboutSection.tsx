@@ -4,9 +4,9 @@ import { Button } from "@/components/ui/button";
 import warehouseImage from "@/assets/warehouse.jpg";
 
 const stats = [
-  { icon: Truck, value: "500+", label: "Phương tiện" },
+  { icon: Truck, value: "100+", label: "Phương tiện" },
   { icon: Users, value: "1000+", label: "Khách hàng" },
-  { icon: Award, value: "15+", label: "Năm kinh nghiệm" },
+  { icon: Award, value: "10+", label: "Năm kinh nghiệm" },
   { icon: Clock, value: "24/7", label: "Hỗ trợ" },
 ];
 
@@ -30,7 +30,7 @@ const AboutSection = () => {
               Đối Tác Vận Tải <span className="text-gradient">Tin Cậy</span> Của Bạn
             </h2>
             <p className="text-muted-foreground mb-6 text-lg leading-relaxed">
-              Với hơn 15 năm kinh nghiệm trong ngành vận tải, chúng tôi tự hào là đơn vị 
+              Với hơn 10 năm kinh nghiệm trong ngành vận tải, chúng tôi tự hào là đơn vị 
               hàng đầu cung cấp dịch vụ vận chuyển hàng hóa container, hàng siêu trường 
               siêu trọng trên toàn quốc.
             </p>
