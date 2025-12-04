@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import containerYard from "@/assets/container-yard.jpg";
 import heavyTransport from "@/assets/heavy-transport.jpg";
 import flatbedTruck from "@/assets/flatbed-truck.jpg";
+import heroTruck from "@/assets/hero-truck.jpg";
 
 const services = [
   {
@@ -26,6 +27,13 @@ const services = [
     description: "Chuyên vận chuyển vật liệu xây dựng, thiết bị máy móc công trình.",
     image: flatbedTruck,
     link: "/dich-vu/hang-cong-trinh",
+  },
+  {
+    id: 4,
+    title: "Xe tải vận chuyển",
+    description: "Dịch vụ xe tải vận chuyển hàng hóa các loại với đa dạng trọng tải từ 1 tấn đến 30 tấn.",
+    image: heroTruck,
+    link: "/dich-vu/xe-tai-van-chuyen",
   },
 ];
 

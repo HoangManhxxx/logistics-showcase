@@ -51,6 +51,19 @@ const services = [
       "Báo giá theo chuyến hoặc theo khối lượng",
     ],
   },
+  {
+    id: 4,
+    title: "Xe tải vận chuyển",
+    description: "Dịch vụ xe tải vận chuyển hàng hóa các loại với đa dạng trọng tải, phục vụ nhu cầu vận chuyển linh hoạt.",
+    image: heroTruck,
+    features: [
+      "Xe tải từ 1 tấn đến 30 tấn",
+      "Xe thùng kín, thùng bạt, thùng lửng",
+      "Vận chuyển hàng lẻ, hàng ghép",
+      "Giao hàng nhanh trong ngày",
+      "Giá cước cạnh tranh",
+    ],
+  },
 ];
 
 const DichVu = () => {
