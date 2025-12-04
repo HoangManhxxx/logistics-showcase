@@ -3,10 +3,9 @@ import { ArrowRight, Eye } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import containerYard from "@/assets/container-yard.jpg";
 import heavyTransport from "@/assets/heavy-transport.jpg";
-import warehouse from "@/assets/warehouse.jpg";
 import flatbedTruck from "@/assets/flatbed-truck.jpg";
-import craneService from "@/assets/crane-service.jpg";
 import heroTruck from "@/assets/hero-truck.jpg";
+import truckFleet from "@/assets/truck-fleet.jpg";
 
 const projects = [
   {
@@ -23,27 +22,27 @@ const projects = [
   },
   {
     id: 3,
-    title: "Kho bãi logistics KCN",
-    category: "Cho thuê kho bãi",
-    image: warehouse,
-  },
-  {
-    id: 4,
     title: "Vận chuyển vật liệu xây dựng",
     category: "Hàng công trình",
     image: flatbedTruck,
   },
   {
-    id: 5,
-    title: "Cẩu lắp đặt cầu trục",
-    category: "Dịch vụ cẩu",
-    image: craneService,
-  },
-  {
-    id: 6,
+    id: 4,
     title: "Vận chuyển hàng hóa xuất khẩu",
     category: "Container",
     image: heroTruck,
+  },
+  {
+    id: 5,
+    title: "Xe tải vận chuyển hàng lẻ",
+    category: "Xe tải vận chuyển",
+    image: truckFleet,
+  },
+  {
+    id: 6,
+    title: "Vận chuyển máy móc công nghiệp",
+    category: "Siêu trường siêu trọng",
+    image: heavyTransport,
   },
 ];
 
