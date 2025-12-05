@@ -85,7 +85,7 @@ const ContactForm = () => {
 
           {/* Form */}
           <div className="bg-card rounded-2xl p-6 md:p-8 shadow-lg">
-            <h3 className="font-heading font-bold text-xl mb-6">Gửi yêu cầu báo giá</h3>
+            <h3 className="font-heading font-bold text-xl mb-6">Gửi yêu cầu</h3>
             <form onSubmit={handleSubmit} className="space-y-5">
               <div className="grid sm:grid-cols-2 gap-4">
                 <div>

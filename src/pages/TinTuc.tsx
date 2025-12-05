@@ -30,15 +30,6 @@ const news = [
   },
   {
     id: 3,
-    title: "Vận Tải Hoàng Phong mở rộng dịch vụ tại miền Trung",
-    excerpt: "Chúng tôi vui mừng thông báo mở rộng mạng lưới dịch vụ vận chuyển tại khu vực miền Trung.",
-    image: warehouse,
-    date: "05/11/2024",
-    author: "Admin",
-    category: "Tin công ty",
-  },
-  {
-    id: 4,
     title: "Cách tối ưu chi phí vận chuyển cho doanh nghiệp",
     excerpt: "Hướng dẫn chi tiết các phương pháp giảm chi phí logistics mà vẫn đảm bảo chất lượng dịch vụ.",
     image: heroTruck,
@@ -47,22 +38,13 @@ const news = [
     category: "Kiến thức",
   },
   {
-    id: 5,
+    id: 4,
     title: "Quy trình bảo hiểm hàng hóa vận chuyển",
     excerpt: "Tất cả những điều bạn cần biết về bảo hiểm hàng hóa trong vận tải đường bộ.",
     image: containerYard,
     date: "25/10/2024",
     author: "Admin",
     category: "Kiến thức",
-  },
-  {
-    id: 6,
-    title: "Vận Tải Hoàng Phong đạt chứng nhận ISO 9001:2015",
-    excerpt: "Chúng tôi tự hào được cấp chứng nhận hệ thống quản lý chất lượng ISO 9001:2015.",
-    image: warehouse,
-    date: "20/10/2024",
-    author: "Admin",
-    category: "Tin công ty",
   },
 ];
 
