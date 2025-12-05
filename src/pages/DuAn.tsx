@@ -6,9 +6,7 @@ import CTASection from "@/components/CTASection";
 import { Eye } from "lucide-react";
 import containerYard from "@/assets/container-yard.jpg";
 import heavyTransport from "@/assets/heavy-transport.jpg";
-import warehouse from "@/assets/warehouse.jpg";
 import flatbedTruck from "@/assets/flatbed-truck.jpg";
-import craneService from "@/assets/crane-service.jpg";
 import heroTruck from "@/assets/hero-truck.jpg";
 
 const projects = [
@@ -30,30 +28,6 @@ const projects = [
   },
   {
     id: 3,
-    title: "Kho logistics KCN Long Hậu",
-    category: "Cho thuê kho bãi",
-    location: "Long An",
-    description: "Cho thuê 5.000m² kho hàng cho doanh nghiệp FDI Nhật Bản.",
-    image: warehouse,
-  },
-  {
-    id: 4,
-    title: "Vận chuyển VLXD dự án Metro",
-    category: "Hàng công trình",
-    location: "TP.HCM",
-    description: "Cung cấp dịch vụ vận chuyển thép, bê tông đúc sẵn cho dự án Metro Line 1.",
-    image: flatbedTruck,
-  },
-  {
-    id: 5,
-    title: "Cẩu lắp đặt cầu trục 50T",
-    category: "Dịch vụ cẩu",
-    location: "Bình Dương",
-    description: "Cẩu và lắp đặt cầu trục 50 tấn tại nhà máy sản xuất thép.",
-    image: craneService,
-  },
-  {
-    id: 6,
     title: "Vận chuyển máy móc nhà máy",
     category: "Container",
     location: "Đồng Nai",
@@ -61,7 +35,7 @@ const projects = [
     image: heroTruck,
   },
   {
-    id: 7,
+    id: 4,
     title: "Vận chuyển thiết bị y tế",
     category: "Container nội địa",
     location: "Hà Nội",
@@ -69,24 +43,16 @@ const projects = [
     image: containerYard,
   },
   {
-    id: 8,
-    title: "Cẩu lắp đặt cột thép viễn thông",
-    category: "Dịch vụ cẩu",
-    location: "Toàn quốc",
-    description: "Hợp đồng cẩu lắp 200 cột viễn thông 5G trên toàn quốc.",
-    image: craneService,
-  },
-  {
-    id: 9,
-    title: "Kho hàng lạnh nông sản",
-    category: "Cho thuê kho bãi",
-    location: "Đà Lạt",
-    description: "Cho thuê kho lạnh 2.000m² bảo quản rau củ quả xuất khẩu.",
-    image: warehouse,
+    id: 5,
+    title: "Vận chuyển hàng siêu trọng",
+    category: "Siêu trường siêu trọng",
+    location: "Bình Dương",
+    description: "Vận chuyển thiết bị công nghiệp nặng từ cảng đến nhà máy.",
+    image: flatbedTruck,
   },
 ];
 
-const categories = ["Tất cả", "Container nội địa", "Siêu trường siêu trọng", "Cho thuê kho bãi", "Hàng công trình", "Dịch vụ cẩu"];
+const categories = ["Tất cả", "Container nội địa", "Siêu trường siêu trọng", "Container"];
 
 const DuAn = () => {
   return (

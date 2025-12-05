@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, Clock, Facebook, Youtube, MessageCircle } from "lucide-react";
-
+import logo from "@/assets/logo.png";
 const Footer = () => {
   return (
     <footer className="bg-primary text-primary-foreground">
@@ -10,9 +10,7 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-12 h-12 bg-primary-foreground rounded-lg flex items-center justify-center">
-                <span className="text-primary font-heading font-bold text-xl">HP</span>
-              </div>
+              <img src={logo} alt="Vận Tải Hoàng Phong" className="h-14 w-auto bg-primary-foreground rounded-lg p-1" />
               <div>
                 <h3 className="font-heading font-bold text-lg">VẬN TẢI HOÀNG PHONG</h3>
               </div>
@@ -74,7 +72,7 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0 text-accent" />
                 <span className="text-primary-foreground/80 text-sm">
-                  Số 123, Đường ABC, Quận XYZ, TP. Hồ Chí Minh
+                  Lô 12, 33/275 Đông Khê, phường Gia Viên, TP.Hải Phòng
                 </span>
               </li>
               <li className="flex items-center gap-3">
