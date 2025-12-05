@@ -52,7 +52,7 @@ const ContactForm = () => {
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">Địa chỉ</h4>
                   <p className="text-muted-foreground">
-                    Số 123, Đường ABC, Quận XYZ, TP. Hồ Chí Minh
+                    Lô 12, 33/275 Đông Khê, phường Gia Viên, TP.Hải Phòng
                   </p>
                 </div>
               </div>
