@@ -64,7 +64,7 @@ const LienHe = () => {
                   </div>
                   <h3 className="font-heading font-bold mb-2">Địa chỉ</h3>
                   <p className="text-muted-foreground text-sm">
-                    123 Đường ABC, Q. XYZ, TP.HCM
+                    Lô 12, 33/275 Đông Khê, phường Gia Viên, TP.Hải Phòng
                   </p>
                 </div>
 
