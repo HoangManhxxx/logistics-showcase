@@ -31,7 +31,7 @@ const CTASection = () => {
             <Link to="/lien-he">
               <Button size="lg" variant="outline" className="text-lg px-8 py-6 bg-transparent text-primary-foreground border-primary-foreground/50 hover:bg-primary-foreground/10">
                 <FileText className="w-5 h-5 mr-2" />
-                Gửi yêu cầu báo giá
+                Gửi yêu cầu
               </Button>
             </Link>
           </div>

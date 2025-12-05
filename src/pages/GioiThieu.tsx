@@ -44,7 +44,7 @@ const milestones = [{
   event: "Mở rộng dịch vụ vận chuyển siêu trường siêu trọng"
 }, {
   year: "2020",
-  event: "Đạt 50 phương tiện, mở văn phòng tại Hà Nội"
+  event: "Đạt 50 phương tiện, mở văn phòng tại Hải Phòng"
 }, {
   year: "2024",
   event: "100+ phương tiện, 1000+ khách hàng toàn quốc"
