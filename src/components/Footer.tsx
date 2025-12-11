@@ -62,6 +62,7 @@ const Footer = () => {
               <li>Vận chuyển Container nội địa</li>
               <li>Hàng siêu trường siêu trọng</li>
               <li>Vận chuyển hàng công trình</li>
+              <li>Vận chuyển xe tải con</li>
             </ul>
           </div>
 
@@ -77,14 +78,14 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 flex-shrink-0 text-accent" />
-                <a href="tel:0901234567" className="text-primary-foreground/80 hover:text-accent transition-colors">
-                  090 123 45 67
+                <a href="tel:0974819846" className="text-primary-foreground/80 hover:text-accent transition-colors">
+                  0974 819 846
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 flex-shrink-0 text-accent" />
-                <a href="mailto:info@vantai.vn" className="text-primary-foreground/80 hover:text-accent transition-colors">
-                  info@vantai.vn
+                <a href="mailto:hoangphong.vthp@gmail.com" className="text-primary-foreground/80 hover:text-accent transition-colors">
+                  hoangphong.vthp@gmail.com
                 </a>
               </li>
               <li className="flex items-center gap-3">
@@ -101,7 +102,7 @@ const Footer = () => {
       {/* Google Map */}
       <div className="border-t border-primary-foreground/10">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.6696584237106!2d106.66488827573662!3d10.759921059440953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ee3b3d2f5f1%3A0xf8a6e4f5e5e5e5e5!2sHo%20Chi%20Minh%20City!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3728.5!2d106.6833!3d20.8449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314a7a9eb2b7f7b5%3A0x1234567890abcdef!2zMzMvMjc1IMSQT05HIEtIw4osIEdpYSBWacOqbiwgSOG6o2kgUGjDsm5n!5e0!3m2!1svi!2svn!4v1700000000000!5m2!1svi!2svn"
           width="100%"
           height="250"
           style={{ border: 0 }}
@@ -110,6 +111,16 @@ const Footer = () => {
           referrerPolicy="no-referrer-when-downgrade"
           title="Google Maps"
         />
+        <div className="text-center py-2 bg-primary">
+          <a 
+            href="https://www.google.com/maps/search/33%2F275+%C4%90%C3%B4ng+Kh%C3%AA%2C+Gia+Vi%C3%AAn%2C+H%E1%BA%A3i+Ph%C3%B2ng" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-primary-foreground/80 hover:text-accent text-sm transition-colors"
+          >
+            33/275 Đông Khê, phường Gia Viên, Hải Phòng
+          </a>
+        </div>
       </div>
 
       {/* Bottom Bar */}
