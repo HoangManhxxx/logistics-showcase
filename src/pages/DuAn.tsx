@@ -8,15 +8,16 @@ import containerYard from "@/assets/container-yard.jpg";
 import heavyTransport from "@/assets/heavy-transport.jpg";
 import flatbedTruck from "@/assets/flatbed-truck.jpg";
 import heroTruck from "@/assets/hero-truck.jpg";
+import turbineTransport from "@/assets/turbine-transport.jpg";
 
 const projects = [
   {
     id: 1,
     title: "Vận chuyển turbine nhà máy điện gió",
     category: "Siêu trường siêu trọng",
-    location: "Ninh Thuận - Bình Thuận",
-    description: "Vận chuyển và lắp đặt 20 turbine gió từ cảng Cát Lái đến nhà máy điện gió.",
-    image: heavyTransport,
+    location: "Việt Nam - Lào",
+    description: "Vận chuyển và lắp đặt turbine gió từ Việt Nam sang Lào cho dự án điện gió.",
+    image: turbineTransport,
   },
   {
     id: 2,
