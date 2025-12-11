@@ -63,8 +63,8 @@ const ContactForm = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">Hotline</h4>
-                  <a href="tel:0901234567" className="text-accent font-semibold text-lg hover:text-primary transition-colors">
-                    090 123 45 67
+                  <a href="tel:0974819846" className="text-accent font-semibold text-lg hover:text-primary transition-colors">
+                    0974 819 846
                   </a>
                 </div>
               </div>
@@ -75,8 +75,8 @@ const ContactForm = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">Email</h4>
-                  <a href="mailto:info@vantai.vn" className="text-muted-foreground hover:text-accent transition-colors">
-                    info@vantai.vn
+                  <a href="mailto:hoangphong.vthp@gmail.com" className="text-muted-foreground hover:text-accent transition-colors">
+                    hoangphong.vthp@gmail.com
                   </a>
                 </div>
               </div>

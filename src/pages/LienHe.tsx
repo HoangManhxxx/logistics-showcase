@@ -10,8 +10,8 @@ const LienHe = () => {
   return (
     <>
       <Helmet>
-        <title>Liên hệ | Vận Tải Hoàng Phong - Hotline: 090 123 45 67</title>
-        <meta name="description" content="Liên hệ Vận Tải Hoàng Phong để được tư vấn và báo giá dịch vụ vận chuyển container, hàng siêu trường siêu trọng. Hotline: 090 123 45 67" />
+        <title>Liên hệ | Vận Tải Hoàng Phong - Hotline: 0974 819 846</title>
+        <meta name="description" content="Liên hệ Vận Tải Hoàng Phong để được tư vấn và báo giá dịch vụ vận chuyển container, hàng siêu trường siêu trọng. Hotline: 0974 819 846" />
       </Helmet>
 
       <div className="min-h-screen">
@@ -43,8 +43,8 @@ const LienHe = () => {
                     <Phone className="w-6 h-6 text-primary-foreground" />
                   </div>
                   <h3 className="font-heading font-bold mb-2">Hotline</h3>
-                  <a href="tel:0901234567" className="text-accent font-semibold text-lg hover:text-primary">
-                    090 123 45 67
+                  <a href="tel:0974819846" className="text-accent font-semibold text-lg hover:text-primary">
+                    0974 819 846
                   </a>
                 </div>
 
@@ -53,8 +53,8 @@ const LienHe = () => {
                     <Mail className="w-6 h-6 text-primary-foreground" />
                   </div>
                   <h3 className="font-heading font-bold mb-2">Email</h3>
-                  <a href="mailto:info@vantai.vn" className="text-muted-foreground hover:text-accent">
-                    info@vantai.vn
+                  <a href="mailto:hoangphong.vthp@gmail.com" className="text-muted-foreground hover:text-accent">
+                    hoangphong.vthp@gmail.com
                   </a>
                 </div>
 

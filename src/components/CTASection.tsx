@@ -22,10 +22,10 @@ const CTASection = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="tel:0901234567">
+            <a href="tel:0974819846">
               <Button size="lg" className="btn-accent text-lg px-8 py-6">
                 <Phone className="w-5 h-5 mr-2" />
-                Gọi ngay: 090 123 45 67
+                Gọi ngay: 0974 819 846
               </Button>
             </a>
             <Link to="/lien-he">
