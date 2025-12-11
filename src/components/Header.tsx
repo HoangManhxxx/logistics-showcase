@@ -24,13 +24,13 @@ const Header = () => {
       <div className="bg-primary text-primary-foreground py-2">
         <div className="container mx-auto flex flex-wrap justify-between items-center gap-2 text-sm">
           <div className="flex flex-wrap items-center gap-4 md:gap-6">
-            <a href="tel:0901234567" className="flex items-center gap-2 hover:text-accent transition-colors">
+            <a href="tel:0974819846" className="flex items-center gap-2 hover:text-accent transition-colors">
               <Phone className="w-4 h-4" />
-              <span className="font-semibold">Hotline: 090 123 45 67</span>
+              <span className="font-semibold">Hotline: 0974 819 846</span>
             </a>
-            <a href="mailto:info@vantai.vn" className="hidden sm:flex items-center gap-2 hover:text-accent transition-colors">
+            <a href="mailto:hoangphong.vthp@gmail.com" className="hidden sm:flex items-center gap-2 hover:text-accent transition-colors">
               <Mail className="w-4 h-4" />
-              <span>info@vantai.vn</span>
+              <span>hoangphong.vthp@gmail.com</span>
             </a>
           </div>
           <div className="hidden md:flex items-center gap-4">
@@ -73,7 +73,7 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden md:flex items-center gap-3">
-            <a href="tel:0901234567">
+            <a href="tel:0974819846">
               <Button className="btn-accent font-semibold">
                 <Phone className="w-4 h-4 mr-2" />
                 Gọi ngay
@@ -108,10 +108,10 @@ const Header = () => {
                   {item.name}
                 </Link>
               ))}
-              <a href="tel:0901234567" className="block mt-4">
+              <a href="tel:0974819846" className="block mt-4">
                 <Button className="btn-accent w-full">
                   <Phone className="w-4 h-4 mr-2" />
-                  Gọi ngay: 090 123 45 67
+                  Gọi ngay: 0974 819 846
                 </Button>
               </a>
             </div>
