@@ -44,7 +44,7 @@ const CTASection = () => {
             </div>
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-accent rounded-full" />
-              <span>Phản hồi trong 30 phút</span>
+              <span>Phản hồi trong thời gian sớm nhất</span>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-accent rounded-full" />
