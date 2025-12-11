@@ -102,18 +102,18 @@ const Footer = () => {
       {/* Google Map */}
       <div className="border-t border-primary-foreground/10">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3728.5!2d106.6833!3d20.8449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314a7a9eb2b7f7b5%3A0x1234567890abcdef!2zMzMvMjc1IMSQT05HIEtIw4osIEdpYSBWacOqbiwgSOG6o2kgUGjDsm5n!5e0!3m2!1svi!2svn!4v1700000000000!5m2!1svi!2svn"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3728.6!2d106.6756!3d20.8567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314a7a9c3a8c7f1d%3A0x5b0f3c8d9e1f2a3b!2zxJDDtG5nIEtow6osIEdpYSBWacOqbiwgTmfDtCBRdXnhu4FuLCBI4bqjaSBQaMOybmcsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1702300000000!5m2!1svi!2s"
           width="100%"
           height="250"
           style={{ border: 0 }}
           allowFullScreen
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-          title="Google Maps"
+          title="Google Maps - 33/275 Đông Khê, Gia Viên, Hải Phòng"
         />
         <div className="text-center py-2 bg-primary">
           <a 
-            href="https://www.google.com/maps/search/33%2F275+%C4%90%C3%B4ng+Kh%C3%AA%2C+Gia+Vi%C3%AAn%2C+H%E1%BA%A3i+Ph%C3%B2ng" 
+            href="https://www.google.com/maps/place/%C4%90%C3%B4ng+Kh%C3%AA,+Gia+Vi%C3%AAn,+Ng%C3%B4+Quy%E1%BB%81n,+H%E1%BA%A3i+Ph%C3%B2ng" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-primary-foreground/80 hover:text-accent text-sm transition-colors"
