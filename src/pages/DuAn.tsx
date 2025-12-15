@@ -86,51 +86,38 @@ const DuAn = () => {
           {/* Projects Grid */}
           <section className="py-16 lg:py-24 bg-card">
             <div className="container mx-auto">
-              {/* Category Filter */}
-              <div className="flex flex-wrap gap-3 justify-center mb-12">
-                {categories.map((cat) => (
-                  <button
-                    key={cat}
-                    className="px-4 py-2 rounded-full text-sm font-medium transition-colors bg-secondary text-secondary-foreground hover:bg-primary hover:text-primary-foreground first:bg-primary first:text-primary-foreground"
-                  >
-                    {cat}
-                  </button>
-                ))}
-              </div>
-
               {/* Projects Grid */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                {projects.map((project) => (
+                {projects.map((project, index) => (
                   <div
                     key={project.id}
-                    className="group bg-card rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow"
+                    className="group relative rounded-xl overflow-hidden cursor-pointer animate-fade-in"
+                    style={{ animationDelay: `${index * 0.1}s` }}
                   >
-                    <div className="relative aspect-[4/3] overflow-hidden">
+                    <div className="aspect-[4/3]">
                       <img
                         src={project.image}
                         alt={project.title}
                         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-                      <div className="absolute top-4 left-4">
-                        <span className="px-3 py-1 bg-accent text-accent-foreground text-xs font-semibold rounded-full">
-                          {project.category}
-                        </span>
-                      </div>
-                      <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                        <div className="w-10 h-10 bg-primary-foreground rounded-full flex items-center justify-center">
-                          <Eye className="w-5 h-5 text-primary" />
-                        </div>
-                      </div>
                     </div>
-                    <div className="p-5">
-                      <h3 className="font-heading font-bold text-lg mb-2 group-hover:text-primary transition-colors">
+                    
+                    {/* Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent opacity-80 group-hover:opacity-100 transition-opacity" />
+                    
+                    {/* Content */}
+                    <div className="absolute bottom-0 left-0 right-0 p-5 text-primary-foreground">
+                      <span className="text-xs font-medium text-accent uppercase tracking-wider">
+                        {project.category}
+                      </span>
+                      <h3 className="font-heading font-bold text-lg mt-1 group-hover:text-accent transition-colors">
                         {project.title}
                       </h3>
-                      <p className="text-sm text-muted-foreground mb-2">{project.location}</p>
-                      <p className="text-muted-foreground text-sm line-clamp-2">
-                        {project.description}
-                      </p>
+                    </div>
+
+                    {/* Hover Icon */}
+                    <div className="absolute top-4 right-4 w-10 h-10 bg-accent rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity transform translate-y-2 group-hover:translate-y-0">
+                      <Eye className="w-5 h-5 text-accent-foreground" />
                     </div>
                   </div>
                 ))}
