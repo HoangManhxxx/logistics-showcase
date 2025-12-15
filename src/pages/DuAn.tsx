@@ -8,48 +8,44 @@ import containerYard from "@/assets/container-yard.jpg";
 import heavyTransport from "@/assets/heavy-transport.jpg";
 import flatbedTruck from "@/assets/flatbed-truck.jpg";
 import heroTruck from "@/assets/hero-truck.jpg";
-import turbineTransport from "@/assets/turbine-transport.jpg";
+import truckFleet from "@/assets/truck-fleet.jpg";
 
 const projects = [
   {
     id: 1,
-    title: "Vận chuyển turbine nhà máy điện gió",
+    title: "Vận chuyển thiết bị nhà máy điện",
     category: "Siêu trường siêu trọng",
-    location: "Việt Nam - Lào",
-    description: "Vận chuyển và lắp đặt turbine gió từ Việt Nam sang Lào cho dự án điện gió.",
-    image: turbineTransport,
+    image: heavyTransport,
   },
   {
     id: 2,
-    title: "Container tuyến HCM - Hà Nội",
+    title: "Container tuyến Bắc - Nam",
     category: "Container nội địa",
-    location: "TP.HCM - Hà Nội",
-    description: "Hợp đồng vận chuyển 500 container/tháng cho tập đoàn thương mại điện tử.",
     image: containerYard,
   },
   {
     id: 3,
-    title: "Vận chuyển máy móc nhà máy",
-    category: "Container",
-    location: "Đồng Nai",
-    description: "Di dời toàn bộ máy móc thiết bị cho nhà máy sản xuất linh kiện điện tử.",
-    image: heroTruck,
+    title: "Vận chuyển vật liệu xây dựng",
+    category: "Hàng công trình",
+    image: flatbedTruck,
   },
   {
     id: 4,
-    title: "Vận chuyển thiết bị y tế",
-    category: "Container nội địa",
-    location: "Hà Nội",
-    description: "Vận chuyển máy MRI và CT Scanner cho bệnh viện quốc tế.",
-    image: containerYard,
+    title: "Vận chuyển hàng hóa xuất khẩu",
+    category: "Container",
+    image: heroTruck,
   },
   {
     id: 5,
-    title: "Vận chuyển hàng siêu trọng",
+    title: "Xe tải vận chuyển hàng lẻ",
+    category: "Xe tải vận chuyển",
+    image: truckFleet,
+  },
+  {
+    id: 6,
+    title: "Vận chuyển máy móc công nghiệp",
     category: "Siêu trường siêu trọng",
-    location: "Bình Dương",
-    description: "Vận chuyển thiết bị công nghiệp nặng từ cảng đến nhà máy.",
-    image: flatbedTruck,
+    image: heavyTransport,
   },
 ];
 
