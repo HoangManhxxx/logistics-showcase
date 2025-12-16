@@ -127,10 +127,10 @@ const ContactForm = () => {
                   onChange={(e) => setFormData({ ...formData, service: e.target.value })}
                 >
                   <option value="">Chọn dịch vụ</option>
-                  <option value="container">Vận chuyển Container</option>
-                  <option value="sieu-truong">Hàng siêu trường siêu trọng</option>
-                  <option value="kho-bai">Cho thuê kho bãi</option>
-                  <option value="cau-hang">Dịch vụ cẩu nâng hạ</option>
+                  <option value="container-noi-dia">Vận chuyển Container nội địa</option>
+                  <option value="sieu-truong-sieu-trong">Hàng siêu trường siêu trọng</option>
+                  <option value="hang-cong-trinh">Vận chuyển hàng công trình</option>
+                  <option value="xe-tai-van-chuyen">Xe tải vận chuyển</option>
                   <option value="khac">Khác</option>
                 </select>
               </div>
