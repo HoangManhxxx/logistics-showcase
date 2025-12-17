@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Phone, FileText, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import {PHONE_NUMBER} from "@/constants/InformationConsts.ts";
 
 const CTASection = () => {
   return (
@@ -25,7 +26,7 @@ const CTASection = () => {
             <a href="tel:0974819846">
               <Button size="lg" className="btn-accent text-lg px-8 py-6">
                 <Phone className="w-5 h-5 mr-2" />
-                Gọi ngay: 0974 819 846
+                Gọi ngay: {PHONE_NUMBER}
               </Button>
             </a>
             <Link to="/lien-he">

@@ -1,9 +1,11 @@
 import { useState } from "react";
-import { Send, Phone, Mail, MapPin, Loader2 } from "lucide-react";
+import {Send, Phone, Mail, MapPin, Loader2, Facebook} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
+import {ADDRESS, EMAIL, FACEBOOK_URL, PHONE_NUMBER, TIKTOK_URL} from "@/constants/InformationConsts.ts";
+import {Tiktok} from "@/components/ui/icons.tsx";
 
 const ContactForm = () => {
   const { toast } = useToast();
@@ -52,7 +54,7 @@ const ContactForm = () => {
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">Địa chỉ</h4>
                   <p className="text-muted-foreground">
-                    Lô 12, 33/275 Đông Khê, phường Gia Viên, TP.Hải Phòng
+                    {ADDRESS}
                   </p>
                 </div>
               </div>
@@ -64,7 +66,7 @@ const ContactForm = () => {
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">Hotline</h4>
                   <a href="tel:0974819846" className="text-accent font-semibold text-lg hover:text-primary transition-colors">
-                    0974 819 846
+                    {PHONE_NUMBER}
                   </a>
                 </div>
               </div>
@@ -75,8 +77,32 @@ const ContactForm = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">Email</h4>
-                  <a href="mailto:hoangphong.vthp@gmail.com" className="text-muted-foreground hover:text-accent transition-colors">
-                    hoangphong.vthp@gmail.com
+                  <a href={`mailto:${EMAIL}`} className="text-muted-foreground hover:text-accent transition-colors">
+                    {EMAIL}
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Facebook className="w-6 h-6 text-primary-foreground" />
+                </div>
+                <div>
+                  <h4 className="font-semibold text-foreground mb-1">Facebook</h4>
+                  <a href={FACEBOOK_URL} className="text-muted-foreground hover:text-accent transition-colors">
+                    Fanpage: Vận tải Hoàng Phong
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Tiktok className="w-6 h-6 text-primary-foreground" />
+                </div>
+                <div>
+                  <h4 className="font-semibold text-foreground mb-1">Tiktok</h4>
+                  <a href={TIKTOK_URL} className="text-muted-foreground hover:text-accent transition-colors">
+                    Kênh Tiktok: Vận tải Hoàng Phong
                   </a>
                 </div>
               </div>

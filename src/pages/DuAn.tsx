@@ -4,50 +4,8 @@ import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
 import CTASection from "@/components/CTASection";
 import { Eye } from "lucide-react";
-import containerYard from "@/assets/container-yard.jpg";
-import heavyTransport from "@/assets/heavy-transport.jpg";
-import flatbedTruck from "@/assets/flatbed-truck.jpg";
 import heroTruck from "@/assets/hero-truck.jpg";
-import truckFleet from "@/assets/truck-fleet.jpg";
-
-const projects = [
-  {
-    id: 1,
-    title: "Vận chuyển thiết bị nhà máy điện",
-    category: "Siêu trường siêu trọng",
-    image: heavyTransport,
-  },
-  {
-    id: 2,
-    title: "Container tuyến Bắc - Nam",
-    category: "Container nội địa",
-    image: containerYard,
-  },
-  {
-    id: 3,
-    title: "Vận chuyển vật liệu xây dựng",
-    category: "Hàng công trình",
-    image: flatbedTruck,
-  },
-  {
-    id: 4,
-    title: "Vận chuyển hàng hóa xuất khẩu",
-    category: "Container",
-    image: heroTruck,
-  },
-  {
-    id: 5,
-    title: "Xe tải vận chuyển hàng lẻ",
-    category: "Xe tải vận chuyển",
-    image: truckFleet,
-  },
-  {
-    id: 6,
-    title: "Vận chuyển máy móc công nghiệp",
-    category: "Siêu trường siêu trọng",
-    image: heavyTransport,
-  },
-];
+import {projects} from "@/constants/ProjectsConsts.ts";
 
 const categories = ["Tất cả", "Container nội địa", "Siêu trường siêu trọng", "Container"];
 
@@ -109,6 +67,9 @@ const DuAn = () => {
                       <h3 className="font-heading font-bold text-lg mt-1 group-hover:text-accent transition-colors">
                         {project.title}
                       </h3>
+                      <p className="italic text-sm mt-1 group-hover:text-accent transition-colors">
+                        {project.summary}
+                      </p>
                     </div>
 
                     {/* Hover Icon */}

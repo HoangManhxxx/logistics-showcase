@@ -5,13 +5,17 @@ import FloatingButtons from "@/components/FloatingButtons";
 import ContactForm from "@/components/ContactForm";
 import { Phone, Mail, MapPin, Clock, Facebook, Youtube, MessageCircle } from "lucide-react";
 import heroTruck from "@/assets/hero-truck.jpg";
+import {ADDRESS, EMAIL, PHONE_NUMBER} from "@/constants/InformationConsts";
 
 const LienHe = () => {
   return (
     <>
       <Helmet>
-        <title>Liên hệ | Vận Tải Hoàng Phong - Hotline: 0974 819 846</title>
-        <meta name="description" content="Liên hệ Vận Tải Hoàng Phong để được tư vấn và báo giá dịch vụ vận chuyển container, hàng siêu trường siêu trọng. Hotline: 0974 819 846" />
+        <title>Liên hệ | Vận Tải Hoàng Phong - Hotline: {PHONE_NUMBER}</title>
+        <meta
+            name="description"
+            content={`Liên hệ Vận Tải Hoàng Phong để được tư vấn và báo giá dịch vụ vận chuyển container, hàng siêu trường siêu trọng. Hotline: ${PHONE_NUMBER}`}
+        />
       </Helmet>
 
       <div className="min-h-screen">
@@ -44,7 +48,7 @@ const LienHe = () => {
                   </div>
                   <h3 className="font-heading font-bold mb-2">Hotline</h3>
                   <a href="tel:0974819846" className="text-accent font-semibold text-lg hover:text-primary">
-                    0974 819 846
+                    {PHONE_NUMBER}
                   </a>
                 </div>
 
@@ -53,8 +57,8 @@ const LienHe = () => {
                     <Mail className="w-6 h-6 text-primary-foreground" />
                   </div>
                   <h3 className="font-heading font-bold mb-2">Email</h3>
-                  <a href="mailto:hoangphong.vthp@gmail.com" className="text-muted-foreground hover:text-accent">
-                    hoangphong.vthp@gmail.com
+                  <a href={`mailto:${EMAIL}`} className="text-muted-foreground hover:text-accent">
+                    {EMAIL}
                   </a>
                 </div>
 
@@ -64,7 +68,7 @@ const LienHe = () => {
                   </div>
                   <h3 className="font-heading font-bold mb-2">Địa chỉ</h3>
                   <p className="text-muted-foreground text-sm">
-                    Lô 12, 33/275 Đông Khê, phường Gia Viên, TP.Hải Phòng
+                    {ADDRESS}
                   </p>
                 </div>
 
