@@ -2,7 +2,8 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Phone, Mail, Clock, MapPin, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo.jpg";
+import {EMAIL, PHONE_NUMBER, WORKING_HOURS} from "@/constants/InformationConsts.ts";
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
@@ -26,17 +27,17 @@ const Header = () => {
           <div className="flex flex-wrap items-center gap-4 md:gap-6">
             <a href="tel:0974819846" className="flex items-center gap-2 hover:text-accent transition-colors">
               <Phone className="w-4 h-4" />
-              <span className="font-semibold">Hotline: 0974 819 846</span>
+              <span className="font-semibold">Hotline: {PHONE_NUMBER}</span>
             </a>
-            <a href="mailto:hoangphong.vthp@gmail.com" className="hidden sm:flex items-center gap-2 hover:text-accent transition-colors">
+            <a href={`mailto:${EMAIL}`} className="hidden sm:flex items-center gap-2 hover:text-accent transition-colors">
               <Mail className="w-4 h-4" />
-              <span>hoangphong.vthp@gmail.com</span>
+              <span>{EMAIL}</span>
             </a>
           </div>
           <div className="hidden md:flex items-center gap-4">
             <div className="flex items-center gap-2">
               <Clock className="w-4 h-4" />
-              <span>T2-T6: 8AM-5PM | T7: 8AM-12PM</span>
+              <span>{WORKING_HOURS}</span>
             </div>
           </div>
         </div>
@@ -111,7 +112,7 @@ const Header = () => {
               <a href="tel:0974819846" className="block mt-4">
                 <Button className="btn-accent w-full">
                   <Phone className="w-4 h-4 mr-2" />
-                  Gọi ngay: 0974 819 846
+                  Gọi ngay: {PHONE_NUMBER}
                 </Button>
               </a>
             </div>

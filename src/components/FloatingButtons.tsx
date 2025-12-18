@@ -1,4 +1,5 @@
 import { Phone, MessageCircle } from "lucide-react";
+import {PHONE_NUMBER} from "@/constants/InformationConsts.ts";
 
 const FloatingButtons = () => {
   return (
@@ -26,7 +27,7 @@ const FloatingButtons = () => {
       {/* Hotline Badge */}
       <div className="fixed bottom-6 left-6 bg-primary text-primary-foreground px-4 py-2 rounded-full shadow-lg hidden md:flex items-center gap-2">
         <Phone className="w-4 h-4 animate-pulse" />
-        <span className="font-semibold text-sm">HOTLINE: 0974 819 846</span>
+        <span className="font-semibold text-sm">HOTLINE: {PHONE_NUMBER}</span>
       </div>
     </div>
   );

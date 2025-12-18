@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
-import { Phone, Mail, MapPin, Clock, Facebook, Youtube, MessageCircle } from "lucide-react";
-import logo from "@/assets/logo.png";
+import { Phone, Mail, MapPin, Clock, Facebook } from "lucide-react";
+import logo from "@/assets/logo.jpg";
+
+import {ADDRESS, EMAIL, FACEBOOK_URL, PHONE_NUMBER, TIKTOK_URL, WORKING_HOURS} from "@/constants/InformationConsts.ts";
+import {Tiktok, } from "@/components/ui/icons.tsx";
 const Footer = () => {
   return (
     <footer className="bg-primary text-primary-foreground">
@@ -20,14 +23,11 @@ const Footer = () => {
               vận chuyển hàng siêu trường siêu trọng trên toàn quốc.
             </p>
             <div className="flex gap-3">
-              <a href="#" className="w-10 h-10 bg-primary-foreground/10 rounded-full flex items-center justify-center hover:bg-accent hover:text-accent-foreground transition-colors">
+              <a href={FACEBOOK_URL} className="w-10 h-10 bg-primary-foreground/10 rounded-full flex items-center justify-center hover:bg-accent hover:text-accent-foreground transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-primary-foreground/10 rounded-full flex items-center justify-center hover:bg-accent hover:text-accent-foreground transition-colors">
-                <Youtube className="w-5 h-5" />
-              </a>
-              <a href="#" className="w-10 h-10 bg-primary-foreground/10 rounded-full flex items-center justify-center hover:bg-accent hover:text-accent-foreground transition-colors">
-                <MessageCircle className="w-5 h-5" />
+              <a href={TIKTOK_URL} className="w-10 h-10 bg-primary-foreground/10 rounded-full flex items-center justify-center hover:bg-accent hover:text-accent-foreground transition-colors">
+                <Tiktok className="w-5 h-5" />
               </a>
             </div>
           </div>
@@ -73,25 +73,25 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0 text-accent" />
                 <span className="text-primary-foreground/80 text-sm">
-                  Lô 12, 33/275 Đông Khê, phường Gia Viên, TP.Hải Phòng
+                  {ADDRESS}
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 flex-shrink-0 text-accent" />
                 <a href="tel:0974819846" className="text-primary-foreground/80 hover:text-accent transition-colors">
-                  0974 819 846
+                  {PHONE_NUMBER}
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 flex-shrink-0 text-accent" />
-                <a href="mailto:hoangphong.vthp@gmail.com" className="text-primary-foreground/80 hover:text-accent transition-colors">
-                  hoangphong.vthp@gmail.com
+                <a href={`mailto:${EMAIL}`} className="text-primary-foreground/80 hover:text-accent transition-colors">
+                  {EMAIL}
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Clock className="w-5 h-5 flex-shrink-0 text-accent" />
                 <span className="text-primary-foreground/80 text-sm">
-                  T2-T6: 8AM-5PM | T7: 8AM-12PM
+                  {WORKING_HOURS}
                 </span>
               </li>
             </ul>
