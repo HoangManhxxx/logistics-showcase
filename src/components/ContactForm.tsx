@@ -6,32 +6,40 @@ import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import {ADDRESS, EMAIL, FACEBOOK_URL, PHONE_NUMBER, TIKTOK_URL} from "@/constants/InformationConsts.ts";
 import {Tiktok} from "@/components/ui/icons.tsx";
+import {Inquiry} from "@/models/Inquiry.ts";
 
 const ContactForm = () => {
   const { toast } = useToast();
   const [isLoading, setIsLoading] = useState(false);
-  const [formData, setFormData] = useState({
-    name: "",
+  const apiUrl = import.meta.env.VITE_API_URL;
+  const [formData, setFormData] = useState<Inquiry>({
+    fullName: "",
     phone: "",
     email: "",
     service: "",
-    message: "",
+    detail: "",
   });
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
-
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-
-    toast({
-      title: "Gửi thành công!",
-      description: "Chúng tôi sẽ liên hệ lại trong thời gian sớm nhất.",
-    });
-
-    setFormData({ name: "", phone: "", email: "", service: "", message: "" });
-    setIsLoading(false);
+    try{
+      const response = await fetch(apiUrl, {
+        method: 'POST',
+        redirect: "follow",
+        headers: {
+          'Content-Type': 'text/plain;charset=utf-8',
+        },
+        body: JSON.stringify(formData),
+      });
+    } finally {
+      toast({
+        title: "Gửi thành công!",
+        description: "Chúng tôi sẽ liên hệ lại trong thời gian sớm nhất.",
+      });
+      setFormData({ fullName: "", phone: "", email: "", service: "", detail: "" });
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -112,15 +120,15 @@ const ContactForm = () => {
           {/* Form */}
           <div className="bg-card rounded-2xl p-6 md:p-8 shadow-lg">
             <h3 className="font-heading font-bold text-xl mb-6">Gửi yêu cầu</h3>
-            <form onSubmit={handleSubmit} className="space-y-5">
+            <form method="POST" onSubmit={handleSubmit} action={apiUrl} className="space-y-5">
               <div className="grid sm:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-sm font-medium mb-2">Họ và tên *</label>
                   <Input
                     required
                     placeholder="Nhập họ và tên"
-                    value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                    value={formData.fullName}
+                    onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
                   />
                 </div>
                 <div>
@@ -166,8 +174,8 @@ const ContactForm = () => {
                 <Textarea
                   placeholder="Mô tả chi tiết nhu cầu vận chuyển của bạn..."
                   rows={4}
-                  value={formData.message}
-                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                  value={formData.detail}
+                  onChange={(e) => setFormData({ ...formData, detail: e.target.value })}
                 />
               </div>
 
