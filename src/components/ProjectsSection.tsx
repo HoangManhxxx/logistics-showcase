@@ -38,7 +38,7 @@ const ProjectsSection = () => {
               {/* Content */}
               <div className="absolute bottom-0 left-0 right-0 p-5 text-primary-foreground">
                 <span className="text-xs font-medium text-accent uppercase tracking-wider">
-                  {project.category}
+                  {project.highlight}
                 </span>
                 <h3 className="font-heading font-bold text-lg mt-1 group-hover:text-accent transition-colors">
                   {project.title}

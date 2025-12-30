@@ -12,28 +12,11 @@ import ContactForm from "@/components/ContactForm";
 const Index = () => {
   return (
     <>
-      <Helmet>
-        <title>Vận Tải Hoàng Phong | Dịch vụ vận chuyển container, hàng siêu trường siêu trọng</title>
-        <meta name="description" content="Công ty Vận Tải Hoàng Phong chuyên vận chuyển container nội địa, hàng siêu trường siêu trọng, hàng công trình. Hotline: 090 123 45 67" />
-        <meta name="keywords" content="vận tải, vận chuyển container, hàng siêu trường siêu trọng, hàng công trình" />
-        <link rel="canonical" href="https://vantaivietnam.vn" />
-      </Helmet>
-
-      <div className="min-h-screen">
-        <Header />
-        
-        <main>
           <HeroSection />
           <ServicesSection />
           <AboutSection />
           <ProjectsSection />
-          <CTASection />
           <ContactForm />
-        </main>
-
-        <Footer />
-        <FloatingButtons />
-      </div>
     </>
   );
 };

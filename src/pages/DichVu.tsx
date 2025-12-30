@@ -70,15 +70,6 @@ const services = [
 const DichVu = () => {
   return (
     <>
-      <Helmet>
-        <title>Dịch vụ vận tải | Container, Siêu trường siêu trọng, Kho bãi</title>
-        <meta name="description" content="Dịch vụ vận tải đa dạng: vận chuyển container nội địa, hàng siêu trường siêu trọng, cho thuê kho bãi, dịch vụ cẩu nâng hạ. Hotline: 090 123 45 67" />
-      </Helmet>
-
-      <div className="min-h-screen">
-        <Header />
-        
-        <main>
           {/* Hero Banner */}
           <section className="relative py-20 lg:py-32">
             <div className="absolute inset-0">
@@ -140,13 +131,6 @@ const DichVu = () => {
               ))}
             </div>
           </section>
-
-          <CTASection />
-        </main>
-
-        <Footer />
-        <FloatingButtons />
-      </div>
     </>
   );
 };

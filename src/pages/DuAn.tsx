@@ -3,24 +3,33 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
 import CTASection from "@/components/CTASection";
-import { Eye } from "lucide-react";
+import {Eye, Loader2} from "lucide-react";
 import heroTruck from "@/assets/hero-truck.jpg";
-import {projects} from "@/constants/ProjectsConsts.ts";
+import {useEffect, useState} from "react";
+import {getList} from "@/services/appscript.ts";
+import {Project} from "@/models/Project.ts";
 
 const categories = ["Tất cả", "Container nội địa", "Siêu trường siêu trọng", "Container"];
 
 const DuAn = () => {
+  const [isLoading, setIsLoading] = useState(true);
+  const [projects, setProjects] = useState<Project[]>([]);
+
+  useEffect(() => {
+    fetchList();
+  }, [])
+
+  const fetchList = async () => {
+    setIsLoading(true);
+    try {
+      const projectResponse = await getList("Projects", 5);
+      setProjects(projectResponse.items);
+    } finally {
+      setIsLoading(false);
+    }
+  }
   return (
     <>
-      <Helmet>
-        <title>Dự án thực tế | Hình ảnh hoạt động vận tải</title>
-        <meta name="description" content="Hình ảnh các dự án vận tải đã thực hiện: vận chuyển container, hàng siêu trường siêu trọng, cho thuê kho bãi, dịch vụ cẩu." />
-      </Helmet>
-
-      <div className="min-h-screen">
-        <Header />
-        
-        <main>
           {/* Hero Banner */}
           <section className="relative py-20 lg:py-32">
             <div className="absolute inset-0">
@@ -39,18 +48,22 @@ const DuAn = () => {
 
           {/* Projects Grid */}
           <section className="py-16 lg:py-24 bg-card">
+            {isLoading ?
+                <div className="flex items-center justify-center w-full min-h-screen">
+                  <Loader2 className="w-24 h-24 animate-spin" />
+                </div> :
             <div className="container mx-auto">
               {/* Projects Grid */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {projects.map((project, index) => (
                   <div
-                    key={project.id}
+                    key={index}
                     className="group relative rounded-xl overflow-hidden cursor-pointer animate-fade-in"
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
                     <div className="aspect-[4/3]">
                       <img
-                        src={project.image}
+                        src={project.thumbnail}
                         alt={project.title}
                         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                       />
@@ -62,7 +75,7 @@ const DuAn = () => {
                     {/* Content */}
                     <div className="absolute bottom-0 left-0 right-0 p-5 text-primary-foreground">
                       <span className="text-xs font-medium text-accent uppercase tracking-wider">
-                        {project.category}
+                        {project.highlight}
                       </span>
                       <h3 className="font-heading font-bold text-lg mt-1 group-hover:text-accent transition-colors">
                         {project.title}
@@ -74,20 +87,15 @@ const DuAn = () => {
 
                     {/* Hover Icon */}
                     <div className="absolute top-4 right-4 w-10 h-10 bg-accent rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity transform translate-y-2 group-hover:translate-y-0">
-                      <Eye className="w-5 h-5 text-accent-foreground" />
+                      <a href={`du-an/${project.url}`}>
+                        <Eye className="w-5 h-5 text-accent-foreground" />
+                      </a>
                     </div>
                   </div>
                 ))}
               </div>
-            </div>
+            </div>}
           </section>
-
-          <CTASection />
-        </main>
-
-        <Footer />
-        <FloatingButtons />
-      </div>
     </>
   );
 };

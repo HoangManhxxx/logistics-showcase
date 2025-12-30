@@ -7,11 +7,11 @@ import { useToast } from "@/hooks/use-toast";
 import {ADDRESS, EMAIL, FACEBOOK_URL, PHONE_NUMBER, TIKTOK_URL} from "@/constants/InformationConsts.ts";
 import {Tiktok} from "@/components/ui/icons.tsx";
 import {Inquiry} from "@/models/Inquiry.ts";
+import {postContactForm} from "@/services/appscript.ts";
 
 const ContactForm = () => {
   const { toast } = useToast();
   const [isLoading, setIsLoading] = useState(false);
-  const apiUrl = import.meta.env.VITE_API_URL;
   const [formData, setFormData] = useState<Inquiry>({
     fullName: "",
     phone: "",
@@ -24,14 +24,7 @@ const ContactForm = () => {
     e.preventDefault();
     setIsLoading(true);
     try{
-      const response = await fetch(apiUrl, {
-        method: 'POST',
-        redirect: "follow",
-        headers: {
-          'Content-Type': 'text/plain;charset=utf-8',
-        },
-        body: JSON.stringify(formData),
-      });
+      const _ = await postContactForm(formData);
     } finally {
       toast({
         title: "Gửi thành công!",
@@ -120,7 +113,7 @@ const ContactForm = () => {
           {/* Form */}
           <div className="bg-card rounded-2xl p-6 md:p-8 shadow-lg">
             <h3 className="font-heading font-bold text-xl mb-6">Gửi yêu cầu</h3>
-            <form method="POST" onSubmit={handleSubmit} action={apiUrl} className="space-y-5">
+            <form method="POST" onSubmit={handleSubmit} className="space-y-5">
               <div className="grid sm:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-sm font-medium mb-2">Họ và tên *</label>
