@@ -1,9 +1,23 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, Eye } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import {projects} from "@/constants/ProjectsConsts.ts";
+import {useEffect, useState} from "react";
+import {Project} from "@/models/Project.ts";
+import {getList} from "@/services/appscript.ts";
 
 const ProjectsSection = () => {
+  const [projects, setProjects] = useState<Project[]>([]);
+
+  useEffect(() => {
+    fetchList();
+  }, [])
+
+  const fetchList = async () => {
+    try {
+      const projectResponse = await getList("Projects", 5);
+      setProjects(projectResponse.items);
+    }finally {}
+  }
   return (
     <section className="py-16 lg:py-24 bg-card">
       <div className="container mx-auto">
@@ -20,13 +34,13 @@ const ProjectsSection = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, index) => (
             <div
-              key={project.id}
+              key={index}
               className="group relative rounded-xl overflow-hidden cursor-pointer animate-fade-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="aspect-[4/3]">
                 <img
-                  src={project.image}
+                  src={project.thumbnail}
                   alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />

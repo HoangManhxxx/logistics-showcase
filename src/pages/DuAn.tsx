@@ -2,7 +2,6 @@ import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
-import CTASection from "@/components/CTASection";
 import {Eye, Loader2} from "lucide-react";
 import heroTruck from "@/assets/hero-truck.jpg";
 import {useEffect, useState} from "react";
